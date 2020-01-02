@@ -57,21 +57,21 @@
         public static string GetDateTime2Format(int? size = null) =>
             size.HasValue && size.Value >= 0 && size.Value < dateTime2Formats.Length
                 ? dateTime2Formats[size.Value]
-                : dateTime2Formats[dateTime2Formats.Length - 1];
+                : dateTime2Formats[^1];
 
         public static string GetDateTimeOffsetUtcFormat(int? size = null) =>
             size.HasValue && size.Value >= 0 && size.Value < dateTimeOffsetUtcFormats.Length
                 ? dateTimeOffsetUtcFormats[size.Value]
-                : dateTimeOffsetUtcFormats[dateTimeOffsetUtcFormats.Length - 1];
+                : dateTimeOffsetUtcFormats[^1];
 
         public static string GetDateTimeOffsetFormat(int? size = null) =>
             size.HasValue && size.Value >= 0 && size.Value < dateTimeOffsetFormats.Length
                 ? dateTimeOffsetFormats[size.Value]
-                : dateTimeOffsetFormats[dateTimeOffsetFormats.Length - 1];
+                : dateTimeOffsetFormats[^1];
 
         public static string GetTimeFormat(int? size = null) =>
             size.HasValue && size.Value >= 0 && size.Value < timeFormats.Length
                 ? timeFormats[size.Value]
-                : timeFormats[timeFormats.Length - 1];
+                : timeFormats[^1];
     }
 }
