@@ -1,0 +1,25 @@
+# Editor backups
+*~
+*.bak
+*.swp
+
+# IDE-generated files
+*.suo
+*.user
+*.sln.cache
+.vs
+.vscode
+
+# IDE add-ins
+*.dotCover
+.resharper
+*.ReSharper
+_ReSharper*
+StyleCop.Cache
+
+# Build output directories
+**/bin/
+**/obj/
+
+# Packages installed during the build
+packages
